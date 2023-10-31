@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <header>
-      <h1>Vera</h1>
       <nav>
         <ul>
           <li>About Me</li>
@@ -20,11 +20,19 @@
     </header>
     <main>
       <section class="hero-section">
-        <div class="hero-section-img">
-          <img src="#" alt="portrait of Vera" />
+        <div id="hero-section-item">
+          <img
+            src="https://www.thephotoargus.com/wp-content/uploads/2015/10/Black-and-White-Portrait-18.jpg"
+            alt="portrait of Vera"
+            class="hero-section-img"
+          />
         </div>
-        <div class="hero-section-name"></div>
-        <div class="hero-section-colorBlock"></div>
+        <div id="hero-section-item">
+          <div class="hero-section-name"></div>
+        </div>
+        <div id="hero-section-item" class="hero-section-colorBlock">
+          <h1>VERA</h1>
+        </div>
       </section>
       <section class="about-me">
         <h2>About Me</h2>
@@ -36,7 +44,13 @@
             communication.
           </p>
         </div>
-        <div class="invisible-about-me">
+        <button
+          id="readMoreButton"
+          onclick="viewMore('invisible-about-me','readMoreButton')"
+        >
+          View more
+        </button>
+        <div id="invisible-about-me">
           <p>
             My academic roots in Dutch language and literature might seem like
             an unusual starting point, but it's here that I honed my love for
@@ -73,160 +87,203 @@
           </p>
         </div>
       </section>
-      <section class="projects">
+      <section class="projects-section">
         <h2>Projects</h2>
-        <div class="projects-animations">
-          <h3>Animations</h3>
-          <p>
-            Animation is a magical realm where creativity knows no bounds.
-            Through the power of motion and visuals, we breathe life into
-            stories, ideas, and concepts, and we also perform a vital role in
-            transforming abstract and complex information into captivating
-            narratives. Each animation project is a canvas for imagination,
-            where we unleash the potential to captivate, educate, and entertain.
-            From character-driven narratives to dynamic explainer videos,
-            animations have the remarkable ability to connect with audiences on
-            a profound level. It's the art of storytelling through movement, and
-            I'm thrilled to share a glimpse of this enchanting world with you.
-          </p>
-          <div class="invisible-projects-animations">
-            <h4>Animation 1</h4>
-            <img
-              src="#"
-              alt="a screenshot of an animation Vera made that links to a video on youtube"
-            />
-            <h4>Animation 2</h4>
-            <img
-              src="#"
-              alt="a screenshot of an animation Vera made that links to a video on youtube"
-            />
+        <div class="projects">
+          <div class="projects-animations">
+            <h3>Animations</h3>
+            <p>
+              Animation is a magical realm where creativity knows no bounds.
+              Through the power of motion and visuals, we breathe life into
+              stories, ideas, and concepts, and we also perform a vital role in
+              transforming abstract and complex information into captivating
+              narratives. Each animation project is a canvas for imagination,
+              where we unleash the potential to captivate, educate, and
+              entertain. From character-driven narratives to dynamic explainer
+              videos, animations have the remarkable ability to connect with
+              audiences on a profound level. It's the art of storytelling
+              through movement, and I'm thrilled to share a glimpse of this
+              enchanting world with you.
+            </p>
+            <button
+              id="viewMoreAnimations"
+              onclick="viewMore('invisible-projects-animations', 'viewMoreAnimations')"
+            >
+              View more
+            </button>
+            <div id="invisible-projects-animations">
+              <h4>Animation 1</h4>
+              <img
+                src="https://i0.wp.com/t-artmagazine.com/wp-content/uploads/2021/04/vector-creator.png?fit=800%2C534&ssl=1"
+                alt="a screenshot of an animation Vera made that links to a video on youtube"
+              />
+              <h4>Animation 2</h4>
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/004/634/863/non_2x/happy-manager-at-desk-semi-flat-color-character-posing-figure-full-body-person-on-white-corporate-work-isolated-modern-cartoon-style-illustration-for-graphic-design-and-animation-vector.jpg"
+                alt="a screenshot of an animation Vera made that links to a video on youtube"
+              />
+            </div>
           </div>
-        </div>
-        <div class="projects-infographics">
-          <h3>Infographics</h3>
-          <p>
-            Information, when presented visually, becomes a powerful
-            storyteller. Infographics are a creative fusion of data, design, and
-            communication, transcending the ordinary to make complex and often
-            mundane information accessible and engaging. These visual gems
-            aren't just about aesthetics; they're about transforming facts and
-            figures into memorable stories. With infographics, I explore the art
-            of simplifying complexity and fostering understanding, translating
-            abstract data into products that help viewers grasp information at a
-            glance. It's in these dynamic graphics that we find the potential to
-            enlighten, persuade, and leave a lasting impact. Join me on a
-            journey through this world of information design.
-          </p>
-          <div class="invisible-projects-infographics">
-            <h4>Infographic 1</h4>
-            <img src="#" alt="an infographic of a..." />
-            <h4>Infographic 2</h4>
-            <img src="#" alt="an infographic of a..." />
+          <div class="projects-infographics">
+            <h3>Infographics</h3>
+            <p>
+              Information, when presented visually, becomes a powerful
+              storyteller. Infographics are a creative fusion of data, design,
+              and communication, transcending the ordinary to make complex and
+              often mundane information accessible and engaging. These visual
+              gems aren't just about aesthetics; they're about transforming
+              facts and figures into memorable stories. With infographics, I
+              explore the art of simplifying complexity and fostering
+              understanding, translating abstract data into products that help
+              viewers grasp information at a glance. It's in these dynamic
+              graphics that we find the potential to enlighten, persuade, and
+              leave a lasting impact. Join me on a journey through this world of
+              information design.
+            </p>
+            <button
+              id="viewMoreInfographics"
+              onclick="viewMore('invisible-projects-infographics', 'viewMoreInfographics')"
+            >
+              View more
+            </button>
+            <div id="invisible-projects-infographics">
+              <h4>Infographic 1</h4>
+              <img
+                src="https://www.onderwijsinspectie.nl/binaries/medium/content/gallery/onderwijsinspectie/content-afbeeldingen/overig/infographic-de-versterking-van-ons-toezicht.png"
+                alt="an infographic of a..."
+              />
+              <h4>Infographic 2</h4>
+              <img
+                src="https://www.onderwijsinspectie.nl/binaries/large/content/gallery/onderwijsinspectie/content-afbeeldingen/primair-onderwijs/poster-schoolverschillen-po.png"
+                alt="an infographic of a..."
+              />
+            </div>
           </div>
-        </div>
-        <div class="projects-webDevelopment">
-          <h3>Web Development</h3>
-          <p>
-            In the digital age, web development is the alchemy that turns ideas
-            into interactive experiences. While I'm just beginning my journey in
-            this field and have a grasp of the basics, these projects may not
-            yet be considered state of the art. However, I'm eager to share my
-            web development creations, which represent the early steps of my
-            exploration in this dynamic domain. Web development is where
-            innovation and creativity converge, pushing the boundaries of what's
-            possible on the internet. From responsive designs that adapt to any
-            device to dynamic web applications, I'm excited to take you on a
-            tour through the ever-evolving world of web development, where
-            innovation and creativity are the driving forces.
-          </p>
-          <div class="invisible-projects-webDevelopment">
-            <h4>Webdev project 1</h4>
-            <img src="#" alt="a screenshot of code" />
-            <h4>Webdev project 2</h4>
-            <img src="#" alt="a screenshot of code" />
+          <div class="projects-webDevelopment">
+            <h3>Web Development</h3>
+            <p>
+              In the digital age, web development is the alchemy that turns
+              ideas into interactive experiences. While I'm just beginning my
+              journey in this field and have a grasp of the basics, these
+              projects may not yet be considered state of the art. However, I'm
+              eager to share my web development creations, which represent the
+              early steps of my exploration in this dynamic domain. Web
+              development is where innovation and creativity converge, pushing
+              the boundaries of what's possible on the internet. From responsive
+              designs that adapt to any device to dynamic web applications, I'm
+              excited to take you on a tour through the ever-evolving world of
+              web development, where innovation and creativity are the driving
+              forces.
+            </p>
+            <button
+              id="viewMoreWebDevs"
+              onclick="viewMore('invisible-projects-webDevelopment', 'viewMoreWebDevs')"
+            >
+              View more
+            </button>
+            <div id="invisible-projects-webDevelopment">
+              <h4>Webdev project 1</h4>
+              <img
+                src="https://as1.ftcdn.net/v2/jpg/04/29/99/12/1000_F_429991249_Ztd5FHYbOOLr8cYpYT1V5TyrATm1UL1u.jpg"
+                alt="a screenshot of code"
+              />
+              <h4>Webdev project 2</h4>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/91/JavaScript_screenshot.png?20140623193111"
+                alt="a screenshot of code"
+              />
+            </div>
           </div>
         </div>
       </section>
-      <section class="skills">
+      <section>
         <h2>Skills</h2>
-        <div class="skills-hard"></div>
-        <ul>
-          <li>
-            <h4>Front-End Development</h4>
-            <p class="skills-hard-frontEndDevelopment-hidden">
-              My foundation in HTML, CSS, and JavaScript allows me to create
-              interactive and visually appealing web content, bringing user
-              interfaces to life.
-            </p>
-          </li>
-          <li>
-            <h4>Adobe Creative Suite</h4>
-            <p class="skills-hard-adobeCreativeSuite-hidden">
-              Proficiency in Adobe After Effects, Illustrator, Premiere Pro, and
-              InDesign empowers me to craft captivating visual experiences and
-              convey ideas effectively through a variety of media.
-            </p>
-          </li>
-          <li>
-            <h4>Scrum Experience</h4>
-            <p class="skills-hard-scrumExperience-hidden">
-              While relatively new to the Scrum framework, my recent exposure
-              has given me insight into agile project management and
-              collaborative development methodologies.
-            </p>
-          </li>
-          <li>
-            <h4>Self-Learning</h4>
-            <p class="skills-hard-selfLearning-hidden">
-              I've cultivated the ability to independently acquire new skills
-              and knowledge by leveraging online resources and tutorials,
-              enabling continuous growth.
-            </p>
-          </li>
-        </ul>
-        <div class="skills-soft">
+        <div class="skills">
+          <div class="skills-hard"></div>
           <ul>
-            <li>
-              <h4>Communication</h4>
-              <p class="skills-soft-communication-hidden">
-                My background in Dutch language and literature, coupled with
-                proficient English language skills, equips me with strong
-                written and spoken communication abilities to convey ideas
-                effectively.
+            <li id="frontend">
+              <button
+                onclick="unfold('skills-hard-frontEndDevelopment-hidden')"
+              >
+                Front-End development
+              </button>
+
+              <p id="skills-hard-frontEndDevelopment-hidden">
+                My foundation in HTML, CSS, and JavaScript allows me to create
+                interactive and visually appealing web content, bringing user
+                interfaces to life.
               </p>
             </li>
             <li>
-              <h4>Information Translation</h4>
-              <p class="skills-soft-informationTranslation-hidden">
-                I possess a unique talent for transforming complex, abstract
-                data into visually accessible formats, making information more
-                understandable and engaging.
+              <h4>Adobe Creative Suite</h4>
+              <p id="skills-hard-adobeCreativeSuite-hidden">
+                Proficiency in Adobe After Effects, Illustrator, Premiere Pro,
+                and InDesign empowers me to craft captivating visual experiences
+                and convey ideas effectively through a variety of media.
               </p>
             </li>
             <li>
-              <h4>Independence</h4>
-              <p class="skills-soft-independence-hidden">
-                I thrive when working independently, offering a self-reliant
-                approach to tasks and a preference for taking initiative.
+              <h4>Scrum Experience</h4>
+              <p id="skills-hard-scrumExperience-hidden">
+                While relatively new to the Scrum framework, my recent exposure
+                has given me insight into agile project management and
+                collaborative development methodologies.
               </p>
             </li>
             <li>
-              <h4>Time Management</h4>
-              <p class="skills-soft-timeManagement-hidden">
-                My proactive time management skills ensure that I consistently
-                meet project deadlines and maintain open communication when
-                adjustments are necessary.
-              </p>
-            </li>
-            <li>
-              <h4>Research and Problem-Solving</h4>
-              <p class="skills-soft-research-hidden">
-                Exceptional research skills combined with an aptitude for
-                problem-solving have led to a proficiency in efficiently finding
-                the information I need through expert use of search engines.
+              <h4>Self-Learning</h4>
+              <p id="skills-hard-selfLearning-hidden">
+                I've cultivated the ability to independently acquire new skills
+                and knowledge by leveraging online resources and tutorials,
+                enabling continuous growth.
               </p>
             </li>
           </ul>
+          <div class="skills-soft">
+            <ul>
+              <li>
+                <h4>Communication</h4>
+                <p id="skills-soft-communication-hidden">
+                  My background in Dutch language and literature, coupled with
+                  proficient English language skills, equips me with strong
+                  written and spoken communication abilities to convey ideas
+                  effectively.
+                </p>
+              </li>
+              <li>
+                <h4>Information Translation</h4>
+                <p id="skills-soft-informationTranslation-hidden">
+                  I possess a unique talent for transforming complex, abstract
+                  data into visually accessible formats, making information more
+                  understandable and engaging.
+                </p>
+              </li>
+              <li>
+                <h4>Independence</h4>
+                <p id="skills-soft-independence-hidden">
+                  I thrive when working independently, offering a self-reliant
+                  approach to tasks and a preference for taking initiative.
+                </p>
+              </li>
+              <li>
+                <h4>Time Management</h4>
+                <p id="skills-soft-timeManagement-hidden">
+                  My proactive time management skills ensure that I consistently
+                  meet project deadlines and maintain open communication when
+                  adjustments are necessary.
+                </p>
+              </li>
+              <li>
+                <h4>Research and Problem-Solving</h4>
+                <p id="skills-soft-research-hidden">
+                  Exceptional research skills combined with an aptitude for
+                  problem-solving have led to a proficiency in efficiently
+                  finding the information I need through expert use of search
+                  engines.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -238,8 +295,6 @@
         <a href="mailto:example@example.com">example@example.com</a>. I look
         forward to connecting with you!
       </p>
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </footer>
-    <script src="main.js"></script>
   </body>
 </html>

@@ -1,23 +1,22 @@
-// Get the button:
-let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+function viewMore(hiddenID, buttonID) {
+  if (document.getElementById(hiddenID).style.display === "none") {
+    document.getElementById(hiddenID).style.display = "block";
+    document.getElementById(buttonID).innerHTML = "View less";
+    document.getElementById(buttonID).style.backgroundColor = "lightgrey";
+    document.getElementById(buttonID).style.color = "black";
   } else {
-    mybutton.style.display = "none";
+    document.getElementById(hiddenID).style.display = "none";
+    document.getElementById(buttonID).innerHTML = "View more";
+    document.getElementById(buttonID).style.backgroundColor = "#ff4000";
+    document.getElementById(buttonID).style.color = "#ffeccc";
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+function unfold(hiddenID) {
+  alert("helloww");
+  if (document.getElementById(hiddenID).style.display === "none") {
+    document.getElementById(hiddenID).style.display = "block";
+  } else {
+    document.getElementById(hiddenID).style.display = "hidden";
+  }
 }
-
-window.alert("sometext");

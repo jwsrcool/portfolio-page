@@ -1,7 +1,91 @@
+* {
+  font-size: 16px;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 8em;
+  color: #201e1f;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+h2 {
+  margin-left: 1.5em;
+  font-size: 3em;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: #201e1f;
+  color: #ffeccc;
+  justify-content: center;
+}
+
+nav li {
+  display: inline;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+  width: 100%;
+  background-color: #201e1f;
+  margin-bottom: 3em;
+}
+
+#hero-section-item {
+  width: 33.3%;
+  height: 100%;
+}
+
+.hero-section-name {
+  color: #201e1f;
+  background-color: #ffeccc;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section-name h1 {
+  font-size: 8em;
+}
+
+.hero-section-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 80% 80%;
+}
+
+.hero-section-colorBlock {
+  background-color: #ff4000;
+}
+
+.about-me {
+  width: 33%;
+  margin: auto;
+}
+
+#invisible-about-me {
+  display: none;
+}
+
+button {
+  background-color: #ff4000;
+  padding: 5px;
+  color: #ffeccc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -21,3 +105,90 @@ body {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+
+#hidden {
+  display: none;
+}
+
+.projects {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+}
+
+.projects-section {
+  margin: auto;
+}
+
+#invisible-projects-animations img {
+  width: 100%;
+}
+
+#invisible-projects-infographics img {
+  width: 100%;
+}
+
+#invisible-projects-webDevelopment img {
+  width: 100%;
+}
+
+#invisible-projects-animations,
+#invisible-projects-infographics,
+#invisible-projects-webDevelopment {
+  display: none;
+}
+
+.projects-animations,
+.projects-infographics,
+.projects-webDevelopment {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.skills {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  align-items: flex-start;
+}
+
+.skills li::marker {
+  content: "▶";
+}
+
+#skills-hard-frontEndDevelopment-hidden,
+#skills-hard-adobeCreativeSuite-hidden,
+#skills-hard-scrumExperience-hidden,
+#skills-hard-selfLearning-hidden,
+#skills-soft-communication-hidden,
+#skills-soft-informationTranslation-hidden,
+#skills-soft-independence-hidden,
+#skills-soft-timeManagement-hidden,
+#skills-soft-research-hidden {
+  display: none;
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+  background-color: #201e1f;
+  color: #ffeccc;
+}
+
+footer p,
+footer h3 {
+  width: 80%;
+  margin-left: 20px;
+}
+
+a {
+  color: #ff4000;
+}
+
+li button {
+  color: black;
+  background-color: transparent;
+  border: none;
+}
+/*content: "▼";*/
