@@ -12,11 +12,11 @@ function viewMore(hiddenID, buttonID) {
   }
 }
 
-function unfold(hiddenID) {
-  alert("helloww");
-  if (document.getElementById(hiddenID).style.display === "none") {
-    document.getElementById(hiddenID).style.display = "block";
-  } else {
-    document.getElementById(hiddenID).style.display = "hidden";
-  }
-}
+// function unfold(hiddenID) {
+//   alert("helloww");
+//   if (document.getElementById(hiddenID).style.display === "none") {
+//     document.getElementById(hiddenID).style.display = "block";
+//   } else {
+//     document.getElementById(hiddenID).style.display = "hidden";
+//   }
+// }

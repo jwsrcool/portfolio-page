@@ -42,20 +42,25 @@ nav li {
   margin-bottom: 3em;
 }
 
-#hero-section-item {
-  width: 33.3%;
+.hero-section-item {
+  flex: 1; /* Distribute space evenly among all three items */
   height: 100%;
+  display: flex;
+  align-items: center; /* Vertically center the content */
 }
 
 .hero-section-name {
   color: #201e1f;
   background-color: #ffeccc;
-  width: 100%;
-  height: 100%;
+  text-align: center; /* Center the text horizontally */
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
 }
 
 .hero-section-name h1 {
   font-size: 8em;
+  margin: 0; /* Remove default margins */
 }
 
 .hero-section-img {
@@ -74,9 +79,9 @@ nav li {
   margin: auto;
 }
 
-#invisible-about-me {
+/* #invisible-about-me {
   display: none;
-}
+} */
 
 button {
   background-color: #ff4000;
@@ -117,7 +122,7 @@ button {
   justify-content: space-between;
 }
 
-.projects-section {
+#projects-section {
   margin: auto;
 }
 
@@ -148,16 +153,19 @@ button {
 
 .skills {
   display: flex;
-  width: 50%;
+  width: 80%;
   margin: auto;
   align-items: flex-start;
 }
 
 .skills li::marker {
-  content: "▶";
+  content: "▶  ";
 }
 
-#skills-hard-frontEndDevelopment-hidden,
+.skills li p {
+  font-style: italic;
+}
+/* #skills-hard-frontEndDevelopment-hidden,
 #skills-hard-adobeCreativeSuite-hidden,
 #skills-hard-scrumExperience-hidden,
 #skills-hard-selfLearning-hidden,
@@ -167,28 +175,30 @@ button {
 #skills-soft-timeManagement-hidden,
 #skills-soft-research-hidden {
   display: none;
-}
+} */
 
 footer {
   height: 150px;
   width: 100%;
   background-color: #201e1f;
   color: #ffeccc;
+  padding: 20px; /* Add padding to all sides of the footer */
+  box-sizing: border-box; /* Include padding in the height */
 }
 
 footer p,
 footer h3 {
   width: 80%;
-  margin-left: 20px;
+  margin-left: 0; /* Remove the left margin */
 }
 
 a {
   color: #ff4000;
 }
 
-li button {
+/* li button {
   color: black;
   background-color: transparent;
   border: none;
-}
+} */
 /*content: "▼";*/

@@ -6,34 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="main.js"></script>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li>About Me</li>
-          <li>Projects</li>
-          <li>Skills</li>
+          <li><a href="#aboutMe">About Me</a></li>
+
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#skills-section">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="hero-section">
-        <div id="hero-section-item">
+      <section class="hero-section" id="aboutMe">
+        <div class="hero-section-item">
           <img
             src="https://www.thephotoargus.com/wp-content/uploads/2015/10/Black-and-White-Portrait-18.jpg"
             alt="portrait of Vera"
             class="hero-section-img"
           />
         </div>
-        <div id="hero-section-item">
-          <div class="hero-section-name"></div>
-        </div>
-        <div id="hero-section-item" class="hero-section-colorBlock">
+        <div class="hero-section-item hero-section-name">
           <h1>VERA</h1>
         </div>
+        <div class="hero-section-item hero-section-colorBlock">
+          <!-- You can add content here if needed -->
+        </div>
       </section>
+
       <section class="about-me">
         <h2>About Me</h2>
         <div class="visible-about-me">
@@ -50,7 +52,7 @@
         >
           View more
         </button>
-        <div id="invisible-about-me">
+        <div id="invisible-about-me" style="display: none">
           <p>
             My academic roots in Dutch language and literature might seem like
             an unusual starting point, but it's here that I honed my love for
@@ -87,7 +89,7 @@
           </p>
         </div>
       </section>
-      <section class="projects-section">
+      <section id="projects-section">
         <h2>Projects</h2>
         <div class="projects">
           <div class="projects-animations">
@@ -196,18 +198,13 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="skills-section">
         <h2>Skills</h2>
         <div class="skills">
           <div class="skills-hard"></div>
           <ul>
             <li id="frontend">
-              <button
-                onclick="unfold('skills-hard-frontEndDevelopment-hidden')"
-              >
-                Front-End development
-              </button>
-
+              <h4>Front-End development</h4>
               <p id="skills-hard-frontEndDevelopment-hidden">
                 My foundation in HTML, CSS, and JavaScript allows me to create
                 interactive and visually appealing web content, bringing user
@@ -287,7 +284,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="contact">
       <h3>Contact</h3>
       <p>
         Feel free to reach out to me with any inquiries, project collaborations,
@@ -296,5 +293,6 @@
         forward to connecting with you!
       </p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
