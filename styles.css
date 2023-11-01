@@ -219,13 +219,18 @@ a {
 
 button a {
   color: #ffeccc;
+
+  text-decoration: none;
+
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.toTopButton {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  text-decoration: none;
   background-color: #ff4000;
-  padding: 5px;
-  border-radius: 3px;
 }
 
 /* li button {
